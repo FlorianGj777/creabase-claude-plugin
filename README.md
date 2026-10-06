@@ -14,7 +14,7 @@ Built for media buyers, e-commerce brands and agencies running Meta Ads.
 | `track-competitor-ads` | Follow competitor brands and get a digest of what changed: new ads, cut ads, new winners. |
 | `find-winning-ads` | Find the longest-running ads in an industry or for a brand, and save them to a swipe file. |
 
-The plugin connects Claude to the Créabase MCP server at `https://www.creabase.app/api/mcp`.
+The plugin connects Claude to the Créabase MCP server at `https://www.creabase.app/api/mcp/directory`.
 
 ## Getting started
 

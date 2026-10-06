@@ -2,7 +2,7 @@
   "mcpServers": {
     "creabase": {
       "type": "http",
-      "url": "https://www.creabase.app/api/mcp"
+      "url": "https://www.creabase.app/api/mcp/directory"
     }
   }
 }
