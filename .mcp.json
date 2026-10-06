@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "creabase": {
+      "type": "http",
+      "url": "https://www.creabase.app/api/mcp"
+    }
+  }
+}

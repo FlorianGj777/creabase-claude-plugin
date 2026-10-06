@@ -1,0 +1,27 @@
+{
+  "name": "creabase",
+  "displayName": "Créabase",
+  "version": "1.0.0",
+  "description": "Spy on competitors' Meta ads (Facebook & Instagram Ad Library): full competitor ad audits with estimated budget, longest-running winning ads, hooks, angles and personas, plus daily ad tracking of competitor brands and a curated library of winning ads by industry.",
+  "author": {
+    "name": "Créabase",
+    "email": "support@creabase.app",
+    "url": "https://www.creabase.app"
+  },
+  "homepage": "https://www.creabase.app/connecter-ia",
+  "repository": "https://github.com/FlorianGj777/creabase-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "meta ads",
+    "meta ad library",
+    "facebook ads",
+    "instagram ads",
+    "ad spy",
+    "competitor ads",
+    "competitor analysis",
+    "winning ads",
+    "ad creatives",
+    "media buying",
+    "ecommerce"
+  ]
+}
