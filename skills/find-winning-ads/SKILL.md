@@ -1,6 +1,6 @@
 ---
 name: find-winning-ads
-description: Find winning Meta ads for inspiration — ads that have been running the longest in an industry, or a brand's live ads straight from the Meta Ad Library — and save the best ones to a swipe file. Use when the user wants ad inspiration, winning ads or long-running ads in a niche, examples of creatives that work, or wants to build or browse their swipe file.
+description: Find winning ads for inspiration — Meta ads that have been running the longest in an industry, or a brand's live ads straight from the Meta Ad Library or the TikTok ad library — and save the best ones to a swipe file. Use when the user wants ad inspiration, winning ads or long-running ads in a niche, examples of creatives that work, or wants to build or browse their swipe file.
 ---
 
 # Find winning Meta ads
@@ -15,7 +15,7 @@ Long delivery is the public proxy for a profitable ad: advertisers cut what does
 
 ## For one brand, live
 
-Call `adlibrary_search` with the brand name or Meta Ad Library URL (2 Créabase credits). It returns the public total reported by Meta separately from the collected list, which can be truncated: say so when the list is shorter than the total. For a full strategic audit of that brand, switch to the `spy-meta-ads` skill.
+Call `adlibrary_search` with the brand name or Meta Ad Library URL (2 Créabase credits). For a brand's TikTok ads, pass `platform: "tiktok"` and a European `country` (default `FR`). It returns the public total reported by Meta separately from the collected list, which can be truncated: say so when the list is shorter than the total. For a full strategic audit of that brand, switch to the `spy-meta-ads` skill.
 
 ## Save to the swipe file
 
@@ -27,5 +27,5 @@ Ask before saving: saving spends credits.
 
 ## Notes
 
-- The industry index and `adlibrary_search` cover Meta ads. For a competitor's Google or TikTok ads, use the `spy-meta-ads` or `track-competitor-ads` skill.
+- The industry index covers Meta ads; `adlibrary_search` covers Meta and TikTok. For a competitor's Google ads, use the `spy-meta-ads` or `track-competitor-ads` skill.
 - Answer in the user's language.
