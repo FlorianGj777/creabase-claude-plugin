@@ -2,16 +2,16 @@
 
 ![Créabase](icon.png)
 
-Spy on your competitors' Meta ads from Claude. Créabase reads the public Meta Ad Library (Facebook and Instagram) and turns a brand's ads into a creative strategy audit: estimated monthly budget, the winning ads that have run longest, the most-shown ads, hooks, angles, personas, formats, CTAs and landing pages. It also tracks competitor brands every day and keeps a curated index of long-running ads by industry.
+Spy on your competitors' ads from Claude. Créabase reads the public ad libraries of Meta (Facebook and Instagram), Google (Ads Transparency Center) and TikTok, and turns a brand's ads into a creative strategy audit: estimated monthly budget, the winning ads that have run longest, the most-shown ads, hooks, angles, personas, formats, CTAs and landing pages. It also tracks competitor brands every day, with a digest of their new and cut ads, and keeps a curated index of long-running ads by industry.
 
-Built for media buyers, e-commerce brands and agencies running Meta Ads.
+Built for media buyers, e-commerce brands and agencies who need to know what their competitors are running.
 
 ## What's inside
 
 | Skill | Use it to |
 | --- | --- |
-| `spy-meta-ads` | Audit one competitor's Meta ads: budget, winning ads, angles, personas, landing pages. |
-| `track-competitor-ads` | Follow competitor brands and get a digest of what changed: new ads, cut ads, new winners. |
+| `spy-meta-ads` | Audit one competitor's ads on Meta or Google: budget, winning ads, angles, personas, landing pages. |
+| `track-competitor-ads` | Follow competitor brands on Meta, TikTok or Google and get a digest of what changed: new ads, cut ads, new winners. |
 | `find-winning-ads` | Find the longest-running ads in an industry or for a brand, and save them to a swipe file. |
 
 The plugin connects Claude to the Créabase MCP server at `https://www.creabase.app/api/mcp/directory`.
@@ -22,6 +22,8 @@ The plugin connects Claude to the Créabase MCP server at `https://www.creabase.
 2. When Claude first calls a Créabase tool, sign in to your Créabase account (OAuth). No API key to paste. A free account works: [create one here](https://www.creabase.app).
 3. Ask, for example:
    - "Spy on Gymshark's Meta ads in France."
+   - "What Google ads is Decathlon running?"
+   - "Track Sézane's TikTok ads in France."
    - "What's new in my competitors' ads this week?"
    - "Show me the longest-running ads in the beauty industry."
 
@@ -32,8 +34,8 @@ Reading reports, tracked-brand feeds, the industry index and your swipe file is 
 ## What the plugin sends and stores
 
 - The plugin itself runs no code on your machine. It only declares the Créabase MCP server and the skills above.
-- Tool calls go to `www.creabase.app` over HTTPS, authenticated with your Créabase account. They contain the brand names, Ad Library links, countries and ids you ask about.
-- Créabase stores the audits, tracked brands and saved ads in your account so you can reopen them in the Créabase app. Ad data comes from the public Meta Ad Library.
+- Tool calls go to `www.creabase.app` over HTTPS, authenticated with your Créabase account. They contain the brand names, ad library links, domains, countries and ids you ask about.
+- Créabase stores the audits, tracked brands and saved ads in your account so you can reopen them in the Créabase app. Ad data comes from the public ad libraries of Meta, Google and TikTok.
 - Créabase does not read or store your Claude conversations.
 
 ## Privacy policy

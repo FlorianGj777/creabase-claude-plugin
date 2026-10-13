@@ -1,8 +1,8 @@
 {
   "name": "creabase",
   "displayName": "Créabase",
-  "version": "1.0.1",
-  "description": "Spy on competitors' Meta ads (Facebook & Instagram Ad Library): full competitor ad audits with estimated budget, longest-running winning ads, hooks, angles and personas, plus daily ad tracking of competitor brands and a curated library of winning ads by industry.",
+  "version": "1.1.0",
+  "description": "Spy on competitors' ads across Meta (Facebook & Instagram), Google and TikTok ad libraries: full competitor ad audits with estimated budget, longest-running winning ads, hooks, angles and personas, plus daily tracking of competitor brands with a digest of new and cut ads, and a curated library of winning ads by industry.",
   "author": {
     "name": "Créabase",
     "email": "support@creabase.app",
@@ -23,6 +23,10 @@
     "winning ads",
     "ad creatives",
     "media buying",
-    "ecommerce"
+    "ecommerce",
+    "google ads",
+    "tiktok ads",
+    "ads transparency",
+    "competitor tracking"
   ]
 }

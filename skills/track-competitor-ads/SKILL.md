@@ -1,16 +1,20 @@
 ---
 name: track-competitor-ads
-description: Track competitors' Meta ads over time and report what changed — new ads launched, ads cut, ads crossing 30 days of delivery, launch acceleration and shifts in format, CTA or landing pages. Use when the user wants to monitor or follow competitor brands, asks what is new in their competitors' ads this week, or wants a weekly competitive ads digest.
+description: Track competitors' ads over time on Meta, TikTok or Google and report what changed — new ads launched, ads cut, ads crossing 30 days of delivery, launch acceleration and shifts in format, CTA or landing pages. Use when the user wants to monitor or follow competitor brands, asks what is new in their competitors' ads this week, wants a weekly competitive ads digest, or asks about a competitor's TikTok ads.
 ---
 
-# Track competitors' Meta ads
+# Track competitors' ads
 
 Uses the Créabase Veille: tracked brands are re-scanned automatically every day.
 
 ## Add a brand to tracking
 
 1. Call `veille_list_brands` to see what is already tracked.
-2. Call `veille_track_brand` with `query` (brand name or Meta Ad Library URL). It costs 5 Créabase credits and scrapes a baseline.
+2. Call `veille_track_brand` with `query` (brand name or Meta Ad Library URL) and `platform`:
+   - `meta` (default): Facebook and Instagram;
+   - `tiktok`: the TikTok ad library, which only covers European countries; pass `country`;
+   - `google`: the Google Ads Transparency Center; the advertiser's domain (e.g. `maif.fr`) is the most reliable query; pass `country`.
+   It costs 5 Créabase credits and scrapes a baseline. For TikTok and Google, `baselinePending: true` means the last 30 days are still being fetched: tell the user the dashboard fills in within a few minutes.
    - If several pages match, show the candidates and call again with the chosen `pageId`.
    - The number of tracked brands depends on the user's plan (Free 1, Pro 10, Agency unlimited). If the limit is reached, the tool says which plan to take: relay it, do not retry.
 
@@ -20,7 +24,7 @@ Uses the Créabase Veille: tracked brands are re-scanned automatically every day
 2. The dashboard always covers every tracked ad; `limit` only bounds the `ads` list. Do not raise it to "get everything".
 3. Report by brand, most important first:
    - **Inflections this week**: acceleration in launches, waves of cut ads, ads crossing 30 days of delivery (new winners).
-   - **New ads worth looking at**: hook, format and offer of each.
+   - **New ads worth looking at**: hook, format and offer of each, with the platform it runs on.
    - **Strategy shifts**: share of video, CTAs, landing pages.
    - **Survival**: median ad lifespan and survival rate by launch month.
 4. Give each brand's `reportUrl` (hosted dashboard with the ad visuals).

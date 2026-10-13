@@ -27,4 +27,5 @@ Ask before saving: saving spends credits.
 
 ## Notes
 
+- The industry index and `adlibrary_search` cover Meta ads. For a competitor's Google or TikTok ads, use the `spy-meta-ads` or `track-competitor-ads` skill.
 - Answer in the user's language.
