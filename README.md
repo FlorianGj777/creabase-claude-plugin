@@ -10,7 +10,7 @@ Built for media buyers, e-commerce brands and agencies who need to know what the
 
 | Skill | Use it to |
 | --- | --- |
-| `spy-meta-ads` | Audit one competitor's ads on Meta or Google: budget, winning ads, angles, personas, landing pages. |
+| `spy-meta-ads` | Audit one competitor's ads on Meta, TikTok or Google: budget, winning ads, angles, personas, landing pages. |
 | `track-competitor-ads` | Follow competitor brands on Meta, TikTok or Google and get a digest of what changed: new ads, cut ads, new winners. |
 | `find-winning-ads` | Find the longest-running ads in an industry or for a brand, and save them to a swipe file. |
 
@@ -23,6 +23,7 @@ The plugin connects Claude to the Créabase MCP server at `https://www.creabase.
 3. Ask, for example:
    - "Spy on Gymshark's Meta ads in France."
    - "What Google ads is Decathlon running?"
+   - "What is Gymshark running on TikTok in France?"
    - "Track Sézane's TikTok ads in France."
    - "What's new in my competitors' ads this week?"
    - "Show me the longest-running ads in the beauty industry."
