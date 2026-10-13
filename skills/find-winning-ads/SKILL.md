@@ -1,6 +1,6 @@
 ---
 name: find-winning-ads
-description: Find winning ads for inspiration — Meta ads that have been running the longest in an industry, or a brand's live ads straight from the Meta Ad Library, the TikTok ad library or the Google Ads Transparency Center — and save the best ones to a swipe file. Use when the user wants ad inspiration, winning ads or long-running ads in a niche, examples of creatives that work, or wants to build or browse their swipe file.
+description: Find winning ads for inspiration — Meta, TikTok and YouTube ads that have been running the longest in an industry, or a brand's live ads straight from the Meta Ad Library, the TikTok ad library or the Google Ads Transparency Center — and save the best ones to a swipe file. Use when the user wants ad inspiration, winning ads or long-running ads in a niche, examples of creatives that work, or wants to build or browse their swipe file.
 ---
 
 # Find winning Meta ads
@@ -10,7 +10,7 @@ Long delivery is the public proxy for a profitable ad: advertisers cut what does
 ## By industry (curated index)
 
 1. Call `discovery_list_categories` to get the industry ids.
-2. Call `discovery_search` with the `categoryId`, `sort: "longevity"` and `status: "active"` to get the longest-running ads still live. Use `sort: "recent"` to see new trends.
+2. Call `discovery_search` with the `categoryId`, `sort: "longevity"` and `status: "active"` to get the longest-running ads still live. Use `sort: "recent"` to see new trends. Add `platform` (`meta`, `tiktok` or `youtube`) when the user asks about one network.
 3. For each standout ad, explain why it likely works: hook, format, offer, angle and how long it has been running.
 
 ## For one brand, live
@@ -27,5 +27,5 @@ Ask before saving: saving spends credits.
 
 ## Notes
 
-- The industry index covers Meta ads; `adlibrary_search` covers Meta, TikTok and Google.
+- The industry index covers Meta, TikTok and YouTube ads; `adlibrary_search` covers Meta, TikTok and Google.
 - Answer in the user's language.
