@@ -1,6 +1,6 @@
 ---
 name: find-winning-ads
-description: Find winning ads for inspiration — Meta, TikTok and YouTube ads that have been running the longest in an industry, or a brand's live ads straight from the Meta Ad Library, the TikTok ad library or the Google Ads Transparency Center — and save the best ones to a swipe file. Use when the user wants ad inspiration, winning ads or long-running ads in a niche, examples of creatives that work, or wants to build or browse their swipe file.
+description: Find winning ads for inspiration — Meta, TikTok and YouTube ads that have been running the longest in an industry, or a brand's live ads straight from the Meta Ad Library, the TikTok ad library, the Google Ads Transparency Center, the LinkedIn Ad Library or the Snap Ads Gallery — and save the best ones to a swipe file. Use when the user wants ad inspiration, winning ads or long-running ads in a niche, examples of creatives that work, or wants to build or browse their swipe file.
 ---
 
 # Find winning Meta ads
@@ -15,11 +15,12 @@ Long delivery is the public proxy for a profitable ad: advertisers cut what does
 
 ## For one brand, live
 
-Call `adlibrary_search` with the brand name or Meta Ad Library URL (2 Créabase credits). For a brand's TikTok ads, pass `platform: "tiktok"` and a European `country` (default `FR`). For its Google ads (Search, Shopping, YouTube, Display), pass `platform: "google"`; the advertiser's domain (e.g. `decathlon.fr`) is the most reliable query. It returns the public total reported by Meta separately from the collected list, which can be truncated: say so when the list is shorter than the total. For a full strategic audit of that brand, switch to the `spy-meta-ads` skill.
+Call `adlibrary_search` with the brand name or Meta Ad Library URL (2 Créabase credits). For a brand's TikTok ads, pass `platform: "tiktok"` and a European `country` (default `FR`). For its Google ads (Search, Shopping, YouTube, Display), pass `platform: "google"`; the advertiser's domain (e.g. `decathlon.fr`) is the most reliable query. For LinkedIn, pass `platform: "linkedin"` and the company name. For Snapchat, pass `platform: "snapchat"` and the name of the advertiser paying for the ads (EU countries and Turkey only); ads that stopped gaining impressions are left out (`stoppedAdsExcluded`), and `deliveryVerified: false` means no earlier reading exists yet to check it: tell the user. It returns the public total reported by Meta separately from the collected list, which can be truncated: say so when the list is shorter than the total. For a full strategic audit of that brand, switch to the `spy-meta-ads` skill.
 
 ## Save to the swipe file
 
 - `library_list_folders` lists the user's folders.
+- `library_create_folder` creates a folder (free, paid plans only; optional `parentId` for a subfolder). If a folder with that name already exists there, it returns it instead of creating a duplicate.
 - `library_save_ad` saves an ad by its Meta `adId`, optionally into a folder (1 credit; the media is re-hosted so it stays available after the ad stops).
 - `library_list_ads` lists what is already saved.
 
@@ -27,5 +28,5 @@ Ask before saving: saving spends credits.
 
 ## Notes
 
-- The industry index covers Meta, TikTok and YouTube ads; `adlibrary_search` covers Meta, TikTok and Google.
+- The industry index covers Meta, TikTok and YouTube ads; `adlibrary_search` covers Meta, TikTok, Google, LinkedIn and Snapchat.
 - Answer in the user's language.
